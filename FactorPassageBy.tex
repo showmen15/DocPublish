@@ -1,0 +1,45 @@
+\begin{equation}
+p_j = 1 + \psi\left(d_{jl}\right) * \lambda\left(\alpha_j,\gamma_l\right) * \tau \\
+\label{eq:factorpassageby}
+\end{equation}
+\\
+\\
+\\
+Gdzie:
+\\
+$ p_j $ - Czynnik przejścia przez drzwi dla robota $ j $.
+\\
+$ \psi\left(d_{jl}\right) $ - Funkcja określająca, w jakim stopniu robot jest w zasięgu działania drzwi.
+\\
+$ \lambda(\alpha_j,\gamma_l) $ - Funkcja która decyduje, czy robot $j$ wchodzi do pomieszczenia czy wychodzi z niego.
+\\
+$ \tau \in \mathbb{R}_{+} $ - Współczynnik definiujący wpływ czynnika przejścia na pierwszeństwo. W eksperymentach przyjęliśmy wartość $ \tau = 1 $, ale możliwe jest dynamiczne określanie tego współczynnika na przykład na podstawie stosunku zagęszczeń robotów w sąsiadujących pomieszczeniach.
+\\
+$ d_{jl} $ - Dystans pomiędzy robotem $ j $ oraz środkiem przejścia (drzwiami) $ l $ (można zmienić na odległość od odcinka stanowiącego drzwi).
+\\
+$ l $ - Identyfikator drzwi. Lokalizacja drzwi, ich szerokość oraz kierunek otwarcia zdefiniowane zostały w pliku mapy labiryntu i są dostępne dla każdego z robotów.
+\\
+$ \gamma_l $ - kąt prostopadły do odcinka reprezentującego drzwi, wskazujący kierunek ,,wychodzenia'' przez drzwi. 
+\\
+%$ v_{j} $ - Prędkość liniowa robota $ j $
+\\
+\\
+\begin{equation}
+	\psi\left(d_{jl}\right) = \left\{\begin{array}{ll}
+	\frac{R_{l} - d_{jl}}{R_{l}} \mbox{ dla } d_{jl} \le R_{l} \\
+		0 \mbox{ w innym przypadku }        
+	\cr
+	\end{array}\right.
+\end{equation}
+\\
+\noindent
+gdzie:\\
+$ R_{l} $ - Maksymalny zasięg działania drzwi $l$. 
+
+\begin{equation}
+\lambda\left(\alpha_j,\gamma_l\right) = \left\{\begin{array}{ll}
+1  \mbox{ dla } - \frac{\pi}{2} \leq \alpha_j - \gamma_l \leq \frac{\pi}{2} \\
+0  \mbox{ w innym przypadku }
+\cr
+\end{array}\right.
+\end{equation}

@@ -1,0 +1,22 @@
+\chapter{Teza pracy}
+
+Teza wraz z uzasadnieniem celowości i potrzeby badań.
+
+
+\textbf{Teza pracy:
+Behawioralny i zdecentralizowany algorytm sterowania ruchem robotów mobilnych, oparty o zachowania inspirowane postępowaniem przemieszczających się osób, może być wykorzystany do bezpiecznego i skutecznego koordynowania ruchu grup robotów działających w dynamicznie zmiennych środowiskach. }
+
+
+\textbf{Uzasadnienie:}
+
+Robotyka mobilna to stosunkowo młoda dziedzina nauki, która w ostatnich latach przeżywa dynamiczny rozwój. Wydaje się, że systemy wykorzystujące autonomiczne roboty mobilne mogą z powodzeniem znaleźć zastosowanie między innymi w przemyśle, ratownictwie, ochronie czy inspekcji miejsc trudno dostępnych lub niebezpiecznych dla człowieka. Szczególnie interesującą jest koncepcja wykorzystania grupy współdziałających robotów, które powinny pozwolić na swobodne skalowanie rozwiązań. Dynamiczny rozwój badań nad problemami występującymi w systemach wielorobotowych świadczy o ogromnych nadziejach pokładanych w tej dziedzinie nauki i techniki.
+Autonomia robota i jego mobilność niesie za sobą spore trudności i zagrożenia. Algorytm sterujący poruszającym się robotem musi gwarantować bezpieczeństwo samego urządzenia i jego środowiska oraz musi działać skutecznie w zmieniających się dynamicznie warunkach. Zagadnienie planowania ruchu i sterowania przemieszczającym się robotem znacznie się komplikuje gdy w środowisku jednocześnie działa wiele urządzeń. Problem ten nosi nazwę koordynacji ruchu robotów 
+Istnieją dwa podejścia do problemu koordynacji ruchu robotów. Pierwsze z nich opiera się na scentralizowanym systemie planowania trajektorii bezkolizyjnych. Do jego zalet należy zaliczyć możliwość wyznaczenia globalnie optymalnego planu. Rozwiązanie takie wymusza jednak stałą komunikację z punktem centralnym systemu, co może generować poważne problemy związane z zawodnością połączeń bezprzewodowych oraz wymusza dużą ilość przesyłania danych pomiędzy aktorami. Awaryjność takiego rozwiązanie oraz niska skalowalność narzuca dość duże ograniczenia, co za tym idzie nie jest dobre do systemów w których ilość robotów gwałtownie wzrasta lub środowisko zmienia się znacząco.
+
+Drugie podejście opiera się o model zdecentralizowany. Zakłada ono rozproszenie etapu podejmowania decyzji o wykonaniu konkretnego ruchu na wielu aktorów w systemie. Zaletą takiego rozwiązania jest wysoka odporność na awarie i zdolność do bardzo szybkiej adaptacji w kontekście zachodzących zmian. Rozwiązania tego typu nie są jednak na ogół w stanie zagwarantować skuteczność w każdej sytuacji i mogą prowadzić do zakleszczeń lub oscylacji.
+Pomimo licznych prób rozwiązania problemu zarządzania grupą robotów, nie istnieje jeden uniwersalny, skuteczny i bezpieczny algorytm koordynacji ruchu. Nadal istnieje zapotrzebowanie na poszukiwanie metody która w prosty i spójny sposób rozwiązywałaby stawiany problem.
+
+Praca  stanowi próbę stworzenia zdecentralizowanego, behawioralnego  algorytmu koordynacji ruchu robotów mobilnych działającego w dynamicznie zmieniającym się środowisku, który nie będzie wymagał jawnej komunikacji między robotami. Pomimo tego będzie w stanie rozwiązać trudne sytuacje wynikające z dynamicznie zmieniającego się otoczenia.
+Opracowany algorytm koordynacji grupą robotów mobilnych inspirowany będzie zjawiskami występującymi w środowisku naturalnym, w grupach przemieszczających się ludzi. Modelowane będą takie zjawiska jak chęć lub niechęć do grupowania się, strach czy obowiązujące zasady społeczne.
+
+Zrealizowana w ramach pracy implementacja algorytmu zostanie zweryfikowana z wykorzystaniem fizycznych, czterokołowych robotów mobilnych opracowanych w Katedrze Informatyki.

@@ -1,0 +1,16 @@
+*/*.iml
+*/.idea/
+*/target/
+*/generated-sources/
+
+DocPublish.pdf
+*.aux
+*.log
+*.synctex.gz
+*.bbl
+*.blg
+*.aux
+*.out
+*.lof
+*.run.xml
+*.toc

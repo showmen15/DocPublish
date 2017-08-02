@@ -1,0 +1,35 @@
+ \begin{equation}
+ k_j = \sum_{i \in R}  \left(   \frac{D_{max} - d_{ij}}{D_{max}} ~ \cdot ~ cos(\phi_{ij}) ~ \cdot f_i \right)
+ \label{eq:fearFactor}
+ \end{equation}
+ \\
+ Gdzie:
+ \\
+ $ k_j $ - współczynnik respektu dla robota $ j $
+ \\
+ $ d_{ij} $ - odległość pomiędzy robotem $ i $ oraz $ j $
+ \\
+ $ \phi_{ij} $ - kąt skierowany pomiędzy robotem $ i $ oraz $ j $
+ \\
+ $ f_i $ - bazowy współczynnik respektu dla robot $ i $
+ \\
+ $ D_{max} $ - zasięg
+ \\
+ $ R $ - zbiór robotów
+ 
+ 
+ \begin{equation}
+ \phi_{ij} = \left\{\begin{array}{ll}
+ \alpha_i - \alpha_j  & \mbox{jeżeli } ~~~ |\alpha_i - \alpha_j| \leq \frac{\pi}{2} \\
+ \frac{\pi}{2} & \mbox{w innym przypadku}
+ \cr
+ \end{array}\right.
+ \label{eq:fearFactorAngle}
+ \end{equation}
+ 
+ Gdzie:
+ \\
+ $ \alpha_i $ - Orientacja $ i $ robota (kąt skierowany),
+ \\
+ $ \alpha_j $ - Orientacja $ j $ robota (kąt skierowany).
+ \\

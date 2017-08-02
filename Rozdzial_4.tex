@@ -1,0 +1,116 @@
+\chapter{Hybrydowy algorytm koordynacji ruchu robotów}
+
+\section{Wprowadzenie} 
+
+Założenia algorytmu
+
+Inspiracja zaczerpnięta z obserwacji grup ludzi i zwierząt oraz ich zachowań.
+
+Wzorce zachowań: 
+unikanie kolizji z większym osobnikiem, respekt przed silniejsza grupą.
+wprowadzenie zasad społecznych.
+
+Algorytm reaktywny, bezstanowy 
+
+Brak centralnego planowania.
+
+Działający w czasie rzeczywistym.
+
+Koordynacja ruchy robotów inspirowana zjawiskami społecznymi.
+
+Zjawisko respektu przed silniejszym osobnikiem 
+
+Respekt przed liczniejszą grupą.
+
+Reguła podejmowania decyzji w przejściu - priorytetyzowaniu osób wychodzących z pomieszczenia 
+
+
+Brak jawnej komunikacji 
+
+Algorytm w czasie rzeczywistym adaptuje się do zmieniającego się środowiska.
+
+Omijanie uczestników ruchu stale szukając najlepszej ścieżki do celu.
+
+\section{Zjawisko respektu}
+
+ \begin{itemize}
+ \item inspiracje raz jeszcze -- zwierzęta, ale też ludzie, podświadomie unikają konfliktu z "większymi", ale także zakładają, że "mniejsi" ustąpią im z drogi. Nie musi dotyczyć fizycznego rozmiaru, może pozycji w stadzie -- przykład -- wieku --  przykład -- płci -- p - pozycji w hierarchii -... 
+ \item grupy -- długi opis - zwierzątka, ludzie -- w grupie raźniej ... 
+
+ \item opis metody -- obliczanie autonomiczne współczynnika na podstawie obserwacji
+
+ \end{itemize}
+
+Algorytm Respektu.
+
+Algorytm obliczania realizujemy według wzoru: 
+
+\input{FearFactorBase}
+
+
+\section{Zasada priorytetyzowania wychodzących}
+
+Czynnik przejścia
+
+\input{FactorPassageBy}
+
+\section{Strefa przejścia}
+
+Integracja 1 i 2 - strefa przejścia 
+
+
+tu połączymy dwa wzorki w jeden 
+
+
+\input{FearFactorPS}
+
+
+\section{Zasada prawej dłoni}
+
+Algorytm prawej dłoni.
+
+Opis + schemat 
+
+Skąd zaczerpnięto inspiracji
+
+\section{Metoda RVO}
+
+Algorytm RVO - odniesienia do pracy autorów
+
+co to jest.
+
+podać wzór.
+
+krótki opis jak jest to liczone wraz z odniesieniem do literatury.
+
+Informacja o tym że użyliśmy tej metody do wykrywanie kolizji robotów.
+
+\section{Metoda hybrydowa}
+
+Metoda hybrydowa łącząca w jedno koncepcje Respektu czynnika przejścia oraz metody RVO.
+
+
+Dwie odmiany z czynnikiem przejścia przez drzwi.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.45\columnwidth]{img/FearOrginalny.pdf}
+	\caption{Hybrydowy algorytm koordynacji ruchu robotów.}
+	\label{fig:FearOrginalny}
+\end{figure} 
+
+Schemat algorytmu hybrydowego.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.45\columnwidth]{img/FearNowy.pdf}
+	\caption{Hybrydowy algorytm koordynacji ruchu robotów -  wersja druga.}
+	\label{fig:FearNowy}
+\end{figure} 
+
+
+Mutacje algorytmów:
+Robot o wyższym WR nie ustępuje pierwszeństwa robotom o z niższymi WR.
+Uwzględnianie wszystkich robotów w koordynacji ruchu.
+
+??? Jak nazwać te dwa algorytmy aby w pracy można było je rozróżniać ???
